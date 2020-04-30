@@ -33,6 +33,16 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
+
+  pigeons.each_pair do |bird, attribute|
+    data.each_pair do |attributes, values|
+      values.each_pair do |attribute, value|
+        binding.pry
+
+      end
+    end
+  end
+
   pigeons
 end
 
