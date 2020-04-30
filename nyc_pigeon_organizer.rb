@@ -21,13 +21,17 @@ raw_data = {
 
 def nyc_pigeon_organizer(data)
   pigeons = {}
-  data.each_pair do |keys, values|
-    values.each_pair do |key, value|
+  data.each_pair do |attributes, values|
+    values.each_pair do |attribute, value|
       value.each do |bird|
-        binding.pry
+        if pigeons[bird] == nil || pigeons[bird] == {}
+          pigeons[bird] = {}
+          pigeons[bird][attribute] = []
       end
     end
   end
+  binding.pry
+  pigeons
 end
 
 nyc_pigeon_organizer(raw_data)
