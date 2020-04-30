@@ -20,10 +20,15 @@ raw_data = {
 }
 
 def nyc_pigeon_organizer(data)
-  pigeon_data = {}
-  names = []
-  data.each_pair do |key, value|
-    binding.pry
+  pigeons = {}
+  data.each_pair do |keys, values|
+    values.each_pair do |key, value|
+      value.each do |bird|
+        if pigeon[bird] = nil
+          pigeon[bird] = {}
+        end
+      end
+    end
   end
 end
 
