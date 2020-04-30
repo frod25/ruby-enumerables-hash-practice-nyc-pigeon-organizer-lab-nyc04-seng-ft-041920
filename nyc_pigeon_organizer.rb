@@ -27,6 +27,7 @@ def nyc_pigeon_organizer(data)
         if pigeons[bird] == nil || pigeons[bird] == {}
           pigeons[bird] = {}
           pigeons[bird][attribute] = []
+        end
       end
     end
   end
