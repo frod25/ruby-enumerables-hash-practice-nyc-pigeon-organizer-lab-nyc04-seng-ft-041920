@@ -40,7 +40,7 @@ def nyc_pigeon_organizer(data)
         values.each_pair do |attribute, value|
           binding.pry
           if value.include?(bird)
-            pigeons[bird][info]
+            pigeons[bird][k] << attribute.to_s
           end
         end
       end
