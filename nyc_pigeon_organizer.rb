@@ -40,6 +40,7 @@ def nyc_pigeon_organizer(data)
         binding.pry
         if value.include?(bird)
           pigeons[bird][info]
+        end
       end
     end
   end
