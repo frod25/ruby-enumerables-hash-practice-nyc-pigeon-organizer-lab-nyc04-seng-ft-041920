@@ -26,6 +26,7 @@ def nyc_pigeon_organizer(data)
       value.each do |bird|
         if pigeons[bird] = nil
           pigeons[bird] = {}
+          binding.pry
         end
       end
     end
