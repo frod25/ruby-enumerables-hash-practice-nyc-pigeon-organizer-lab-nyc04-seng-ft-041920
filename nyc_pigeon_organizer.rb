@@ -31,8 +31,6 @@ def nyc_pigeon_organizer(data)
           pigeons[bird][attributes] = []
         end
       end
-      binding.pry
-
     end
   end
   pigeons
