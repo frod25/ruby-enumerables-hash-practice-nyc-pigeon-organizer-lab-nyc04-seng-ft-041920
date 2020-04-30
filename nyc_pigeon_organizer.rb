@@ -34,11 +34,12 @@ def nyc_pigeon_organizer(data)
     end
   end
 
-  pigeons.each_pair do |bird, attribute|
+  pigeons.each_pair do |bird, info|
     data.each_pair do |attributes, values|
       values.each_pair do |attribute, value|
         binding.pry
-
+        if value.include?(bird)
+          pigeons[bird][info]
       end
     end
   end
