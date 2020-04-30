@@ -26,7 +26,7 @@ def nyc_pigeon_organizer(data)
       value.each do |bird|
         if pigeons[bird] == nil || pigeons[bird] == {}
           pigeons[bird] = {}
-          pigeons[bird][attribute] = []
+          pigeons[bird][attributes] = []
         end
       end
     end
