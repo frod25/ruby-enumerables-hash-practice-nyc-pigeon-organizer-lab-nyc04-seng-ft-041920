@@ -24,6 +24,7 @@ def nyc_pigeon_organizer(data)
   data.each_pair do |keys, values|
     values.each_pair do |key, value|
       value.each do |bird|
+        binding.pry
         if pigeons[bird] = nil
 binding.pry
           pigeons[bird] = {}
